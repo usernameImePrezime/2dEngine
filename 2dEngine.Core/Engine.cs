@@ -25,9 +25,19 @@ public class Engine
     }
     protected virtual void Update(double dt) 
     {
+        Boundary screen = new Boundary(0, 0, 800, 450);
+        QuadTree qtree = new QuadTree(screen);
         foreach (var obj in _gameObjects)
         {
             obj.Update(dt);
+            qtree.Insert(obj);
+        }
+        for (int i = 0; i < _gameObjects.Count; i++)
+        {
+            for (int j = i + 1; j < _gameObjects.Count; j++)
+            {
+                _gameObjects[i].CheckCollision(_gameObjects[j]);
+            }
         }
     }
     protected virtual void Render() 

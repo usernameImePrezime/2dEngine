@@ -14,5 +14,9 @@ namespace _2dEngine.Core
             Position += Velocity * (float)dt;
         }
         public abstract void Draw();
+        public virtual void CheckCollision(GameObject other)
+        {
+            
+        }
     }
 }
