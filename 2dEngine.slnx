@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="2dEngine.Core/2dEngine.Core.csproj" />
+  <Project Path="2dEngine.Sandbox/2dEngine.Sandbox.csproj" />
+</Solution>

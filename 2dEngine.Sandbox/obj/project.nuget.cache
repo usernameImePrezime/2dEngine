@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "rF+ARtIockc=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Dante\\2dEngine\\2dEngine.Sandbox\\2dEngine.Sandbox.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Dante\\.nuget\\packages\\raylib-cs\\7.0.2\\raylib-cs.7.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}
