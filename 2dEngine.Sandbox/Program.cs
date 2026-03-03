@@ -13,7 +13,7 @@ public class MyGame : Engine
     public MyGame()
     {
         var rnd = new Random();
-        for (int i = 0; i < 100; i++) // Sada možeš slobodno staviti i 200+
+        for (int i = 0; i < 100; i++)
         {
             var pos = new Vector2(rnd.Next(50, 750), rnd.Next(50, 400));
             var vel = new Vector2(rnd.Next(-150, 150), rnd.Next(-150, 150));
