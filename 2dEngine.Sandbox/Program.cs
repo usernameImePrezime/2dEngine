@@ -1,22 +1,36 @@
 ﻿using Raylib_cs;
 using _2dEngine.Core;
-Raylib.InitWindow(800, 450, "2dEngine Sandbox");
-var game = new MyGame();
-game.Run();
+using _2dEngine.Sandbox;
+using System.Numerics;
 
+Raylib.InitWindow(800, 450, "2dEngine Sandbox");
+
+var game = new MyGame();
+
+game.Run();
 Raylib.CloseWindow();
 public class MyGame : Engine
 {
+    public MyGame()
+    {
+        var rnd = new Random();
+        for (int i = 0; i < 50; i++)
+        {
+            var pos = new Vector2(rnd.Next(50, 750), rnd.Next(50, 400));
+            var vel = new Vector2(rnd.Next(-200, 200), rnd.Next(-200, 200));
+            _gameObjects.Add(new Ball(pos, vel, 10, Color.Maroon));
+        }
+    }
     protected override void Update(double dt)
     {
-        // Logika kretanja
+        base.Update(dt);
     }
-
     protected override void Render()
     {
         Raylib.BeginDrawing();
-        Raylib.ClearBackground(Color.Black); 
-        Raylib.DrawText("2dEngine Faza 1: Game Loop Works!", 10, 10, 20, Color.White);
+        Raylib.ClearBackground(Color.Black);
+        base.Render();
+        Raylib.DrawFPS(10, 10);
         Raylib.EndDrawing();
     }
 }
