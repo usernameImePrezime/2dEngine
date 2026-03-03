@@ -3,7 +3,7 @@ using System.Numerics;
 using _2dEngine.Core;
 using _2dEngine.Sandbox;
 Raylib.InitWindow(800, 450, "2dEngine | QuadTree Optimization");
-Raylib.SetTargetFPS(60);
+Raylib.SetTargetFPS(310);
 var game = new MyGame();
 game.Run();
 Raylib.CloseWindow();
