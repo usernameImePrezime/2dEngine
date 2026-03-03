@@ -4,4 +4,6 @@ Neki moj pokušaj da napravim 2D engine u C#. Mučio sam se sa sudarima pa sam u
 
 - **Game loop:**
 - **QuadTree:**
-- **Sudari:**
+- **Collision:**
+
+- **screenshot** [https://github.com/usernameImePrezime/2dEngine/blob/main/Screenshot.png]
